@@ -1,0 +1,28 @@
+{
+  "name": "classsathi",
+  "version": "1.0.0",
+  "description": "ClassSathi — Smart Attendance & Student Management System for School Teachers",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build": "npm run build --prefix server && npm run build --prefix client",
+    "start": "npm run start --prefix server",
+    "seed": "npm run seed --prefix server",
+    "test": "npm run test --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "school-management",
+    "attendance-system",
+    "mern",
+    "education",
+    "class-teacher"
+  ],
+  "author": "ClassSathi Team",
+  "license": "ISC"
+}
